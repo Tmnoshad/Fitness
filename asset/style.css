@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* Common CSS */
+.container {
+    max-width: 1060px;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+* {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    color:white;
+
+}
+
+.bg-color {
+    background-color: #111111;
+}
+
+.flex {
+    display: flex;
+}
+.text-center {
+    text-align: center;
+}
+
+.common h2{
+    font-size: 48px;
+    font-weight: 900;
+    padding-bottom: 14px;
+}
+.common p {
+    color: rgba(255, 255, 255, 0.508);
+    font-size: 14px;
+    line-height: 24px;
+    padding-bottom: 48px;
+}
+
+/* nav css */
+
+#header {
+    background: #111111;
+    overflow: hidden;
+}
+#navbar {
+display: flex;
+justify-content: space-between;
+padding-top: 20px;
+}
+.logo {
+    color: #E6533C;
+    font-size: 36px;
+    font-style: italic;
+}
+.nav {
+    display: flex;
+    border: 1px solid #ffffff37;
+    border-radius: 39px;
+    padding: 4px;
+}
+
+.nav li {
+    display: flex;
+    padding: 8px 20px;
+    list-style: none;
+}
+.active {
+    background-color: #E6533C;
+    border-radius: 46px;
+
+}
+.nav a {
+    color: white;
+}
+.mobilemenu {
+    display: none;
+}
+
+/* bacckground */
+
+.heading {
+ color: white;
+ align-items: center;
+}
+.banner-section h1 {
+    font-size: 78px;
+    font-weight: 900;
+}
+.banner-section h1 span {
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.banner-section p {
+    font-size: 16px;
+    color: #ffffff62;
+    padding: 15px 0px;
+}
+.buttonsection .button1 {
+    padding: 16px 40px;
+    background-color: #E6533C;
+    border-radius: 42px;
+    font-size: 18px;
+    color:white;
+    margin-right: 20px;
+}
+
+.buttonsection .button2 {
+    padding: 16px 40px;
+    border: 1px solid white;
+    border-radius: 42px;
+    font-size: 18px;
+    background-color: #111111;
+    color: white;
+}
+
+/* workout box */
+.workout {
+    width: 193px;
+    height: 98px;
+    border-radius: 12px;
+    background-color: rgba(247, 247, 247, 0.138);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -65%;
+    left: 55%;
+
+}
+
+.workout h2 {
+    font-size: 40px;
+}
+.workout p {
+    font-size: 13px;
+}
+
+/* tutorial box */
+.tutorial .icon {
+    background-color: #E6533C;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.tutorial h3 {
+    font-weight: 900;
+    font-size: 24px;
+}
+.tutorial p {
+    font-size: 13px;
+    text-align: center;
+}
+.tutorial { 
+    width: 193px;
+    height: 98px;
+    border-radius: 12px;
+    background-color: rgba(247, 247, 247, 0.279);
+
+    position: relative;
+    top: -30%;
+}
+.ibox {
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 5px;
+}
+
+
+/* Habit Section */
+
+.sample img {
+    width: 100%;
+    border-radius: 50%;
+    padding-bottom: 30px;
+}
+.sample {
+    padding-right: 40px;
+    text-align: center;
+}
+.sample h3 {
+    font-size: 18px;
+    font-weight: 800;
+    padding-bottom: 15px;
+}
+
+.sample p {
+    color: rgba(255, 255, 255, 0.508);
+    font-size: 14px;
+    line-height: 24px;
+    padding-bottom: 48px;
+}
+
+
+/* Responsive Part */
+
+@media only screen and (max-width: 576px) {
+    .container {
+        margin: 0 20px
+    }
+    .mobilemenu {
+        display:block;
+    }
+    .nav {
+        display: none;
+    }
+   
+    .banner {
+        flex-direction: column;
+    }
+    .banner-section h1 {
+        font-size: 36px;
+        font-weight: 900;
+        padding-top: 60px;
+    }
+
+    .banner-section p {
+        font-size: 16px;
+        color: #ffffff62;
+        padding: 28px 0px;
+    }
+    .buttonsection .button1 {
+        padding: 10px 20px;
+        background-color: #E6533C;
+        border-radius: 42px;
+        font-size: 18px;
+        color:white;
+        margin-right: 20px;
+        display: inline-block;
+    }
+    
+    .buttonsection .button2 {
+        padding: 10px 20px;
+        border: 1px solid white;
+        border-radius: 42px;
+        font-size: 18px;
+        background-color: #111111;
+        color: white;
+        display: inline-block;
+        margin-bottom: 28px;
+    }
+    .imageworkout {
+        width: 100%;
+    }
+    .workout {
+        top: -550px;
+        left: 53%;
+    
+    }
+    .tutorial { 
+        top: -400px;
+    }
+
+    /* habit */
+    .habit-sample {
+        flex-direction: column;
+    }
+
+    .common h2{
+        font-size: 32px;
+        font-weight: 900;
+        padding-bottom: 14px;
+    }
+    .sample img {
+        width: 70%;
+    }
+}
