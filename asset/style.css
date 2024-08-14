@@ -16,18 +16,28 @@ a {
 }
 
 .bg-color {
-    background-color: #111111;
+    background-color: #000000;
 }
 
 .flex {
     display: flex;
 }
 .text-center {
+    display: flex;
+    justify-content: center;
     text-align: center;
 }
 
+.common {
+    max-width: 500px;
+}
 .common h2{
     font-size: 48px;
+    font-weight: 900;
+    padding-bottom: 14px;
+}
+.common h3 {
+    font-size: 28px;
     font-weight: 900;
     padding-bottom: 14px;
 }
@@ -193,7 +203,78 @@ padding-top: 20px;
     padding-bottom: 48px;
 }
 
+/* run */
 
+#extramile .flex {
+    justify-content: space-between;
+}
+.extramile {
+    background-color: #222222;
+    padding: 20px;
+    border-radius: 18px;
+}
+.runimage img {
+    width: 366px;
+    border-radius: 18px;
+    height: 312px;
+    
+}
+
+#bmicalculator {
+    padding: 88px 0px;
+}
+
+/* table */
+
+.maincontent {
+    background-color: #222222;
+    padding: 20px;
+}
+.tablechart th, td {
+    border: 1px solid #393939;
+    border-collapse: collapse;
+    padding: 15px 20px;
+    text-align: left;
+}
+.tablechart td {
+    color: rgba(255, 255, 255, 0.508);
+}
+
+.tablechart {
+    border-collapse: collapse;
+}
+.bmicalculator {
+    justify-content: space-between;
+}
+
+.set {
+    display: flex;
+}
+.set input, select{
+    color: rgba(255, 255, 255, 0.508);
+    background-color: #393939;
+    height: 48px;
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+
+.height,.weight,.age,.Sex {
+    width: 50%;
+}
+.set .height,.age {
+    padding-right: 12px;
+}
+.factor {
+    width: 100%;
+}
+.form .button1 {
+    width: 224px;
+    height: 54px;
+}
 /* Responsive Part */
 
 @media only screen and (max-width: 576px) {
@@ -266,4 +347,19 @@ padding-top: 20px;
     .sample img {
         width: 70%;
     }
+
+    /* run */
+    #extramile .flex {
+        flex-direction: column;
+    }
+    .runimage {
+        padding-top: 20px;
+    }
+    .runimage img {
+        width: 100%;
+    }
+    .extramile .button1 {
+        width: 100%;
+    }
 }
+
