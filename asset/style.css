@@ -689,7 +689,12 @@ select {
     .team-photo {
         grid-template-columns: repeat(1, 1fr);
     }
+    .team-images img {
+        width: 313px;
+        height: 272px;
+        border-radius: 18px;
 
+    }
     .pricing-section {
         grid-template-columns: repeat(1, 1fr);
     }
